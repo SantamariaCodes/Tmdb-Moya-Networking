@@ -1,0 +1,6 @@
+framework module Pods_MoyaNetworking {
+  umbrella header "Pods-MoyaNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}
