@@ -7,11 +7,13 @@
 
 import Moya
 
-enum TvShowListTarget {
+enum TvShowListTarget: Hashable {
     case popular
     case airingToday
     case onTheAir
     case topRated
+    case details(tvShowId: Int)
+
     
 }
 
@@ -25,12 +27,17 @@ extension TvShowListTarget: TargetType {
            case .airingToday: return "airing_today"
            case .onTheAir: return "on_the_air"
            case .topRated: return "top_rated"
+           case .details(let tvShowId): return "\(tvShowId)"
+
            }
        }
 
     var path: String {
-           return "tv/\(pathComponent)"
-       }
+            switch self {
+            case .details: return "tv/\(pathComponent)"
+            default: return "tv/\(pathComponent)"
+            }
+        }
     
     var method: Moya.Method { return .get }
     

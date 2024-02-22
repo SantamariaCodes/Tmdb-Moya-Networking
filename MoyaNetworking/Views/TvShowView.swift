@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TVShowsView: View {
-    @StateObject var viewModel: TvShowListViewModel // Assume this is initialized elsewhere, like in your App or Scene delegate
-    @State private var selectedListType: TvShowListTarget = .topRated // Default to popular TV shows
+    @StateObject var viewModel: TvShowListViewModel
+    @State private var selectedListType: TvShowListTarget = .topRated
 
     var body: some View {
         NavigationView {
@@ -17,11 +17,13 @@ struct TVShowsView: View {
                 .padding()
 
                 List(viewModel.tvShows, id: \.id) { tvShow in
-                    VStack(alignment: .leading) {
-                        Text(tvShow.title)
-                            .font(.headline)
-                        Text(tvShow.overview)
-                            .font(.subheadline)
+                    NavigationLink(destination: TvShowDetailView(viewModel: TvShowDetailViewModel(tvShowId: tvShow.id, tvShowDetailsService: TvShowDetailsService(networkManager: NetworkManager<TvShowListTarget>())))) {
+                        VStack(alignment: .leading) {
+                            Text(tvShow.title)
+                                .font(.headline)
+                            Text(tvShow.overview)
+                                .font(.subheadline)
+                        }
                     }
                 }
             }
@@ -39,8 +41,6 @@ struct TVShowsView: View {
 // Example preview for TVShowsView
 struct TVShowsView_Previews: PreviewProvider {
     static var previews: some View {
-        TVShowsView(viewModel: TvShowListViewModel(tvService: TvShowListService (networkManager: NetworkManager<TvShowListTarget>())))
+        TVShowsView(viewModel: TvShowListViewModel(tvService: TvShowListService(networkManager: NetworkManager<TvShowListTarget>())))
     }
 }
-
-

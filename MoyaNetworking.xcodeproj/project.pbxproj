@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F09F04F2B864E1A0029157F /* TvShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09F04E2B864E1A0029157F /* TvShowDetailView.swift */; };
+		9F09F0512B864E6E0029157F /* TvShowDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09F0502B864E6E0029157F /* TvShowDetailModel.swift */; };
+		9F09F0532B8684780029157F /* TvDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09F0522B8684780029157F /* TvDetails.swift */; };
+		9F09F0552B8686F20029157F /* Movie&ShowDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09F0542B8686F20029157F /* Movie&ShowDetailsService.swift */; };
+		9F09F0572B868B300029157F /* TvShowDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09F0562B868B300029157F /* TvShowDetailsViewModel.swift */; };
 		9F112B882B7D12F700DB6FA1 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F112B872B7D12F700DB6FA1 /* MovieListResponse.swift */; };
 		9F112B8E2B7FAA2100DB6FA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F112B8D2B7FAA2100DB6FA1 /* Constants.swift */; };
 		9F112B902B7FAA4200DB6FA1 /* MovieListTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F112B8F2B7FAA4200DB6FA1 /* MovieListTarget.swift */; };
@@ -53,6 +58,11 @@
 		34DD7BD6F8F70C07F06F3806 /* Pods-MoyaNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaNetworkingTests.debug.xcconfig"; path = "Target Support Files/Pods-MoyaNetworkingTests/Pods-MoyaNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62B8F2EDE0EF9B3F3B73BC08 /* Pods-MoyaNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaNetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-MoyaNetworkingTests/Pods-MoyaNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		77C25AB8D87DEA9FD8B8FC44 /* Pods-MoyaNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaNetworking.debug.xcconfig"; path = "Target Support Files/Pods-MoyaNetworking/Pods-MoyaNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		9F09F04E2B864E1A0029157F /* TvShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailView.swift; sourceTree = "<group>"; };
+		9F09F0502B864E6E0029157F /* TvShowDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailModel.swift; sourceTree = "<group>"; };
+		9F09F0522B8684780029157F /* TvDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvDetails.swift; sourceTree = "<group>"; };
+		9F09F0542B8686F20029157F /* Movie&ShowDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie&ShowDetailsService.swift"; sourceTree = "<group>"; };
+		9F09F0562B868B300029157F /* TvShowDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsViewModel.swift; sourceTree = "<group>"; };
 		9F112B872B7D12F700DB6FA1 /* MovieListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
 		9F112B8D2B7FAA2100DB6FA1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F112B8F2B7FAA4200DB6FA1 /* MovieListTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTarget.swift; sourceTree = "<group>"; };
@@ -133,6 +143,8 @@
 			children = (
 				9F112B872B7D12F700DB6FA1 /* MovieListResponse.swift */,
 				9F645BA22B83AFF900326621 /* TvListResponse.swift */,
+				9F09F0502B864E6E0029157F /* TvShowDetailModel.swift */,
+				9F09F0522B8684780029157F /* TvDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 			children = (
 				9F112B932B7FAAF100DB6FA1 /* MoviesViewModel.swift */,
 				9F645BA82B83B41F00326621 /* TvShowListViewModel.swift */,
+				9F09F0562B868B300029157F /* TvShowDetailsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -161,6 +174,7 @@
 			children = (
 				9F59A0912B812CA7004C9B08 /* MovieListService.swift */,
 				9F645BA62B83B26800326621 /* TvListService.swift */,
+				9F09F0542B8686F20029157F /* Movie&ShowDetailsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +194,7 @@
 				9F645BAA2B83BD5700326621 /* MainView.swift */,
 				9F645BAC2B83BD7600326621 /* TvShowView.swift */,
 				9F645BAE2B83BF2400326621 /* MovieView.swift */,
+				9F09F04E2B864E1A0029157F /* TvShowDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -446,17 +461,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F112B922B7FAA8400DB6FA1 /* NetworkManager.swift in Sources */,
+				9F09F0512B864E6E0029157F /* TvShowDetailModel.swift in Sources */,
 				9F645BAB2B83BD5700326621 /* MainView.swift in Sources */,
 				9F112B882B7D12F700DB6FA1 /* MovieListResponse.swift in Sources */,
 				9F68FA242B7CFDF100A31C9F /* ContentView.swift in Sources */,
 				9F645BA92B83B41F00326621 /* TvShowListViewModel.swift in Sources */,
 				9F645BA72B83B26800326621 /* TvListService.swift in Sources */,
 				9F645BA52B83B0ED00326621 /* TvShowListTarget.swift in Sources */,
+				9F09F0572B868B300029157F /* TvShowDetailsViewModel.swift in Sources */,
 				9F68FA222B7CFDF100A31C9F /* MoyaNetworkingApp.swift in Sources */,
 				9F645BA32B83AFF900326621 /* TvListResponse.swift in Sources */,
 				9F645BAD2B83BD7600326621 /* TvShowView.swift in Sources */,
+				9F09F04F2B864E1A0029157F /* TvShowDetailView.swift in Sources */,
 				9F645BAF2B83BF2400326621 /* MovieView.swift in Sources */,
 				9F112B8E2B7FAA2100DB6FA1 /* Constants.swift in Sources */,
+				9F09F0552B8686F20029157F /* Movie&ShowDetailsService.swift in Sources */,
+				9F09F0532B8684780029157F /* TvDetails.swift in Sources */,
 				9F112B902B7FAA4200DB6FA1 /* MovieListTarget.swift in Sources */,
 				9F59A0922B812CA7004C9B08 /* MovieListService.swift in Sources */,
 				9F112B942B7FAAF100DB6FA1 /* MoviesViewModel.swift in Sources */,
